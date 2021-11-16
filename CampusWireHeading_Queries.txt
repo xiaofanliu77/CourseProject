@@ -1,0 +1,15 @@
+Tech Review Grading Clarification
+Implicit feedback in Text Retrieval
+extra credit
+How stemming improves recall and decrease precision 
+Pagerank score
+How does T and D correlate to the E step and M-step formulas on the slides
+MP3 build_corpus
+Parameter in F test
+Simple Vector Space Model
+Question on Zipf's law
+MP3 log likelihood not increasing
+Generative vs Discriminative in Logistic Regression
+TF IDF query term frequency
+Expectation maximization and background words
+Question on Probabilistic retrieval model
