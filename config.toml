@@ -5,6 +5,8 @@ dataset = "documents"
 corpus = "line.toml"
 index = "idx"
 
+query-judgements = "campuswire-qrels.txt"
+
 
 [[analyzers]]
 method = "ngram-word"
