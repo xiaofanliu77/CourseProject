@@ -1,13 +1,13 @@
-index = "idx"
-corpus = "line.toml"
 stop-words = "stopwords.txt"
-dataset = "documents"
-query-judgements = "campuswire-qrels.txt"
 prefix = "."
+dataset = "documents"
+corpus = "line.toml"
+query-judgements = "campuswire-qrels.txt"
+index = "idx"
 [query-runner]
 	query-id-start = 1
 	query-path = "CampusWireHeading_Queries.txt"
 [[analyzers]]
 	filter = "default-unigram-chain"
-	ngram = 1
 	method = "ngram-word"
+	ngram = 1
