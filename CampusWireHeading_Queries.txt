@@ -4,9 +4,9 @@ extra credit
 How stemming improves recall and decrease precision 
 Pagerank score
 How does T and D correlate to the E step and M-step formulas on the slides
-MP3 build_corpus
-Parameter in F test
-Simple Vector Space Model
+MP3 build_corpus To complete build_corpus function, it seems like we need to read document
+Parameter in F test I understand that we need to have a high recall in this case. But I am not sure if a higher parameter will lead to a high recall or low recall. Could someone please further explain it?
+Simple Vector Space Model How does using the word count instead of 0-1 bit vectors maintain the same ranking list if we concatenate each document by itself?
 Question on Zipf's law
 MP3 log likelihood not increasing
 Generative vs Discriminative in Logistic Regression
