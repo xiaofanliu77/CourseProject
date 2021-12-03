@@ -11,6 +11,19 @@ import re
 # sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 # sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
+def print_with_highlight(content, query, doc_id=None):
+    highlight_list = []
+    for w in query.split(" "):
+        highlight_list.append(w.capitalize())
+        highlight_list.append(w.lower())
+
+
+    highlight_str = r"\b(?:" + '|'.join(highlight_list) + r")\b"
+    text_highlight = re.sub(highlight_str, '\033[36;40m\g<0>\033[m', content)
+    if doc_id:
+        print("{}. {}...\n".format(d_id, text_highlight))
+    else:
+        print(text_highlight)
 
 if __name__ == '__main__':
 
@@ -50,11 +63,9 @@ if __name__ == '__main__':
     for num, (d_id, _) in enumerate(top_docs):
         content = idx.metadata(d_id).get('content')
         if content is not None:
-            # print("{}. {}...\n".format(d_id+1, content))
-            highlight_list = query_text.split(" ")
-            highlight_str = r"\b(?:" + '|'.join(highlight_list) + r")\b"
-            text_highlight = re.sub(highlight_str, '\033[36;40m\g<0>\033[m', content)
-            print("{}. {}...\n".format(d_id, text_highlight))
+            print_with_highlight(content, query_text, d_id)
+
+            # print("{}. {}...\n".format(d_id, text_highlight))
 
 
     # # ndcg = 0.0
