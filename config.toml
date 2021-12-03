@@ -5,7 +5,7 @@ dataset = "documents"
 corpus = "line.toml"
 index = "idx"
 
-query-judgements = "campuswire-qrels.txt"
+query-judgements = "qrels.txt"
 
 
 [[analyzers]]

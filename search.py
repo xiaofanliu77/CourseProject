@@ -34,7 +34,7 @@ if __name__ == '__main__':
     query_start = query_cfg.get('query-id-start', 0)
 
     query = metapy.index.Document()
-    query.content("Question on Zipf's law")
+    query.content("Pagerank score")
 
     top_docs = ranker.score(idx, query, num_results=10)
     print(top_docs)
