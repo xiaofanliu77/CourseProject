@@ -2,7 +2,7 @@ stop-words = "stopwords.txt"
 prefix = "."
 dataset = "documents"
 corpus = "line.toml"
-query-judgements = "campuswire-qrels.txt"
+query-judgements = "qrels.txt"
 index = "idx"
 [query-runner]
 	query-id-start = 1
