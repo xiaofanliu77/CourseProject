@@ -58,7 +58,7 @@ if __name__ == '__main__':
     cfg = "config.toml"
     idx = metapy.index.make_inverted_index(cfg)
 
-
+    # testing code - not used in final program
     with open(cfg, 'r') as fin:
         cfg_d = pytoml.load(fin)
 
@@ -66,8 +66,6 @@ if __name__ == '__main__':
     if query_cfg is None:
         print("query-runner table needed in {}".format(cfg))
         sys.exit(1)
-
-
 
     top_k = 10
     query_path = query_cfg.get('query-path', 'CampusWireHeading_Queries.txt')
