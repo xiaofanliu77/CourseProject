@@ -5,6 +5,9 @@ Xiaofan Liu / Boyu Pang / Brittany West
 
 Our project is called “Campuswire and Coursera Query Link”, which falls under the “Intelligent Browsing” theme. We developed a program that gives users relevant information from Coursera related to questions that are posted on Campuswire. This program facilitates the learning process by providing relevant ranked documents from Coursera to the user, which reduces the quantity of repeated questions on Campuswire that could quickly crowd out other questions/answers. 
 
+## Presentation Video
+https://mediaspace.illinois.edu/media/t/1_0349u2q8
+
 ## Using the software
 
 To use the software, the user can simply run the main function in search.py. The user will be prompted to provide a query of their choice, as well as a ranking function from a defined set of choices. When both of these are provided, the program will output the top 10 documents that best matched the user query, with the relevant terms highlighted.
